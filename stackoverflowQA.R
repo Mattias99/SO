@@ -385,4 +385,21 @@ match_data <- stringdist_left_join(db_a, db_b,
 library("tidyverse")
 
 left_join(db_a, db_b,by = "zipstreet")
-agrep()
+agrep() 
+####Q ####
+
+df <- data.frame(
+  id = 1:10,
+  time = as.Date('2009-01-01') + 0:9,
+  Q3.2.1. = rnorm(10, 0, 1),
+  Q3.2.2. = rnorm(10, 0, 1),
+  Q3.2.3. = rnorm(10, 0, 1),
+  Q3.3.1. = rnorm(10, 0, 1),
+  Q3.3.2. = rnorm(10, 0, 1),
+  Q3.3.3. = rnorm(10, 0, 1)
+)
+
+library(tidyverse)
+
+df %>%
+  
